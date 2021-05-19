@@ -19,6 +19,8 @@
 
 <h1>This is a list of persons</h1>
 
+<a href="#/create-person">+ Add Person</a>
+
 <table class="table">
     <thead>
         <tr>
@@ -30,7 +32,7 @@
     <tbody>
         {#each persons as person}
             <tr>
-                <td>{person.id}</td>
+                <td><a href={"#/persons/"+person.id}>{person.id}</a></td>
                 <td>{person.name}</td>
                 <td>{person.birthdate}</td>
             </tr>
